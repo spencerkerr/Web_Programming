@@ -6,15 +6,15 @@ window.onload=function() {
 			for (j=0; j<3; j++) {
 				catTable = catTable + "<td><table><tr>";
 				for (k=0; k<3; k++) {
-					catTable  = catTable + "<td><img id=\"cat"+i+j+k+"\" onclick=\"catClick("+i+j+k+")\" src=\"one.jpg\"></td>";
+					catTable  = catTable + "<td><img id=\"cat"+i+j+k+"\" onclick=\"catClick("+i+j+k+")\" src=\"zero.jpg\"></td>";
 				}
 				catTable = catTable + "</tr><tr>";
 				for (l=3; l<6; l++) {
-					catTable  = catTable + "<td><img id=\"cat"+i+j+l+"\" onclick=\"catClick("+i+j+l+")\" src=\"two.jpg\"></td>";
+					catTable  = catTable + "<td><img id=\"cat"+i+j+l+"\" onclick=\"catClick("+i+j+l+")\" src=\"zero.jpg\"></td>";
 				}
 				catTable = catTable + "</tr><tr>";
 				for (m=6; m<9; m++) {
-					catTable  = catTable + "<td><img id=\"cat"+i+j+m+"\" onclick=\"catClick("+i+j+m+")\" src=\"seven.jpg\"></td>";
+					catTable  = catTable + "<td><img id=\"cat"+i+j+m+"\" onclick=\"catClick("+i+j+m+")\" src=\"zero.jpg\"></td>";
 				}
 				catTable = catTable + "</tr></table></td>";
 			}
@@ -30,6 +30,9 @@ function catClick(catPos) {
 	var img = document.getElementById("cat"+catPos);
 	var str = img.src.substring(img.src.lastIndexOf("/")+1,img.src.length);
 	switch (str) {
+		case "zero.jpg":
+			img.src="one.jpg";
+			break
 		case "one.jpg":
 			img.src="two.jpg";
 			break;
@@ -55,7 +58,7 @@ function catClick(catPos) {
 			img.src="nine.jpg";
 			break;
 		case "nine.jpg":
-			img.src="one.jpg";
+			img.src="zero.jpg";
 			break;
 	}
 }
