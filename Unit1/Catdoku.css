@@ -1,3 +1,18 @@
-table {
-	border: 1px solid black;
+body {
+	background-color:black;
+}
+
+#cats  table{
+	background-color:yellow;
+	border: 3px solid orange;
+	margin-right:auto; 
+	margin-left:auto; 
+	width:50%;
+}
+h1 {
+	color: orange;
+	text-align:center;
+}
+img {
+	height:30%;
 }
