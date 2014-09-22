@@ -176,33 +176,266 @@ function catClick(catPos) {
 				break;
 		}
 		switch(catPos) {
-		case 100:
-			current[0] = (current[0] + 1) % 10;
-			break;
-		case 101:
-			current[1] = (current[1] + 1) % 10;
-			break;
-		case 102:
-			current[2] = (current[2] + 1) % 10;
-			break;
-		case 103:
-			current[3] = (current[3] + 1) % 10;
-			break;
-		case 104:
-			current[4] = (current[4] + 1) % 10;
-			break;
-		case 105:
-			current[5] = (current[5] + 1) % 10;
-			break;
-		case 106:
-			current[6] = (current[6] + 1) % 10;
-			break;
-		case 107:
-			current[7] = (current[7] + 1) % 10;
-			break;
-		case 108:
-			current[8] = (current[8] + 1) % 10;
-			break;
+			//upper left
+			case 100:
+				current[0] = (current[0] + 1) % 10;
+				break;
+			case 101:
+				current[1] = (current[1] + 1) % 10;
+				break;
+			case 102:
+				current[2] = (current[2] + 1) % 10;
+				break;
+			case 103:
+				current[3] = (current[3] + 1) % 10;
+				break;
+			case 104:
+				current[4] = (current[4] + 1) % 10;
+				break;
+			case 105:
+				current[5] = (current[5] + 1) % 10;
+				break;
+			case 106:
+				current[6] = (current[6] + 1) % 10;
+				break;
+			case 107:
+				current[7] = (current[7] + 1) % 10;
+				break;
+			case 108:
+				current[8] = (current[8] + 1) % 10;
+				break;
+				
+			//upper middle
+			case 110:
+				current[9] = (current[9] + 1) % 10;
+				break;
+			case 111:
+				current[10] = (current[10] + 1) % 10;
+				break;
+			case 112:
+				current[11] = (current[11] + 1) % 10;
+				break;
+			case 113:
+				current[12] = (current[12] + 1) % 10;
+				break;
+			case 114:
+				current[13] = (current[13] + 1) % 10;
+				break;
+			case 115:
+				current[14] = (current[14] + 1) % 10;
+				break;
+			case 116:
+				current[15] = (current[15] + 1) % 10;
+				break;
+			case 117:
+				current[16] = (current[16] + 1) % 10;
+				break;
+			case 118:
+				current[17] = (current[17] + 1) % 10;
+				break;
+				
+			//upper right
+			case 120:
+				current[18] = (current[18] + 1) % 10;
+				break;
+			case 121:
+				current[19] = (current[19] + 1) % 10;
+				break;
+			case 122:
+				current[20] = (current[20] + 1) % 10;
+				break;
+			case 123:
+				current[21] = (current[21] + 1) % 10;
+				break;
+			case 124:
+				current[22] = (current[22] + 1) % 10;
+				break;
+			case 125:
+				current[23] = (current[23] + 1) % 10;
+				break;
+			case 126:
+				current[24] = (current[24] + 1) % 10;
+				break;
+			case 127:
+				current[25] = (current[25] + 1) % 10;
+				break;
+			case 128:
+				current[26] = (current[26] + 1) % 10;
+				break;
+				
+			//middle left
+			case 200:
+				current[27] = (current[27] + 1) % 10;
+				break;
+			case 201:
+				current[28] = (current[28] + 1) % 10;
+				break;
+			case 202:
+				current[29] = (current[29] + 1) % 10;
+				break;
+			case 203:
+				current[30] = (current[30] + 1) % 10;
+				break;
+			case 204:
+				current[31] = (current[31] + 1) % 10;
+				break;
+			case 205:
+				current[32] = (current[32] + 1) % 10;
+				break;
+			case 206:
+				current[33] = (current[33] + 1) % 10;
+				break;
+			case 207:
+				current[34] = (current[34] + 1) % 10;
+				break;
+			case 208:
+				current[35] = (current[35] + 1) % 10;
+				break;	
+			
+			//middle middle
+			case 210:
+				current[36] = (current[36] + 1) % 10;
+				break;
+			case 211:
+				current[37] = (current[37] + 1) % 10;
+				break;
+			case 212:
+				current[38] = (current[38] + 1) % 10;
+				break;
+			case 213:
+				current[39] = (current[39] + 1) % 10;
+				break;
+			case 214:
+				current[40] = (current[40] + 1) % 10;
+				break;
+			case 215:
+				current[41] = (current[41] + 1) % 10;
+				break;
+			case 216:
+				current[42] = (current[42] + 1) % 10;
+				break;
+			case 217:
+				current[43] = (current[43] + 1) % 10;
+				break;
+			case 218:
+				current[44] = (current[44] + 1) % 10;
+				break;
+				
+			//middle right
+			case 220:
+				current[45] = (current[45] + 1) % 10;
+				break;
+			case 221:
+				current[46] = (current[46] + 1) % 10;
+				break;
+			case 222:
+				current[47] = (current[47] + 1) % 10;
+				break;
+			case 223:
+				current[48] = (current[48] + 1) % 10;
+				break;
+			case 224:
+				current[49] = (current[49] + 1) % 10;
+				break;
+			case 225:
+				current[50] = (current[50] + 1) % 10;
+				break;
+			case 226:
+				current[51] = (current[51] + 1) % 10;
+				break;
+			case 227:
+				current[52] = (current[52] + 1) % 10;
+				break;
+			case 228:
+				current[53] = (current[53] + 1) % 10;
+				break;
+			
+			//lower left
+			case 300:
+				current[54] = (current[54] + 1) % 10;
+				break;
+			case 301:
+				current[55] = (current[55] + 1) % 10;
+				break;
+			case 302:
+				current[56] = (current[56] + 1) % 10;
+				break;
+			case 303:
+				current[57] = (current[57] + 1) % 10;
+				break;
+			case 304:
+				current{58] = (current[58] + 1) % 10;
+				break;
+			case 305:
+				current[59] = (current[59] + 1) % 10;
+				break;
+			case 306:
+				current[60] = (current[60] + 1) % 10;
+				break;
+			case 307:
+				current[61] = (current[61] + 1) % 10;
+				break;
+			case 308:
+				current[62] = (current[62] + 1) % 10;
+				break;	
+				
+			//lower middle
+			case 310:
+				current[63] = (current[63] + 1) % 10;
+				break;
+			case 311:
+				current[64] = (current[64] + 1) % 10;
+				break;
+			case 312:
+				current[65] = (current[65] + 1) % 10;
+				break;
+			case 313:
+				current[66] = (current[66] + 1) % 10;
+				break;
+			case 314:
+				current[67] = (current[67] + 1) % 10;
+				break;
+			case 315:
+				current[68] = (current[68] + 1) % 10;
+				break;
+			case 316:
+				current[69] = (current[69] + 1) % 10;
+				break;
+			case 317:
+				current[70] = (current[70] + 1) % 10;
+				break;
+			case 318:
+				current[71] = (current[71] + 1) % 10;
+				break;
+				
+			//lower right
+			case 220:
+				current[72] = (current[72] + 1) % 10;
+				break;
+			case 221:
+				current[73] = (current[73] + 1) % 10;
+				break;
+			case 222:
+				current[74] = (current[74] + 1) % 10;
+				break;
+			case 223:
+				current[75] = (current[75] + 1) % 10;
+				break;
+			case 224:
+				current[76] = (current[76] + 1) % 10;
+				break;
+			case 225:
+				current[77] = (current[77] + 1) % 10;
+				break;
+			case 226:
+				current[78] = (current[78] + 1) % 10;
+				break;
+			case 227:
+				current[79] = (current[79] + 1) % 10;
+				break;
+			case 228:
+				current[80] = (current[80] + 1) % 10;
+				break;
 		}
 	}
 }
