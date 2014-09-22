@@ -1,4 +1,6 @@
 var fixedCats =[];
+var current =[];
+var solution =[];
 window.onload=function() {
 	var catTable;
 		catTable = "<table>"
@@ -23,12 +25,12 @@ window.onload=function() {
 		}
 		catTable = catTable + "</table>";
 		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"initialize(fixedCats)\" value=\"Reset Puzzle\"/>";
-		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"initialize(fixedCats)\" value=\"Check Solution\"/>";
+		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"checkSolution(current, solution)\" value=\"Check Solution\"/>";
 		document.getElementById("cats").innerHTML = catTable;
-		initialize(fixedCats);
+		initialize(fixedCats, current);
 }
 
-function initialize(fixedCats) {
+function initialize(fixedCats, current, solution) {
 	//upper left block
 	document.getElementById("cat100").src="zero.jpg";	//zero
 	document.getElementById("cat101").src="four.jpg";
@@ -123,8 +125,20 @@ function initialize(fixedCats) {
 	for (i = 0; i < cats.length;i++) {
 		fixedCats.push(cats[i]);
 	}
+	var curr = [0,4,5,8,1,0,7,0,9,8,0,3,0,0,0,0,0,0,7,1,0,0,2,4,5,0,8,0,0,0,0,0,0,0,0,0,9,0,7,0,6,0,4,0,2,0,0,0,0,0,0,0,0,0,6,0,4,3,2,0,0,5,7,0,0,0,0,0,0,3,0,8,3,0,5,0,8,7,2,6,0];
+	for (i = 0; i < curr.length;i++) {
+		current.push(curr[i]);
+	}
+	
+	var sol = [2,4,5,8,1,3,7,6,9,8,9,3,5,7,6,2,1,4,7,1,6,9,2,4,5,3,8,5,3,6,4,9,2,1,7,8,9,8,7,1,6,5,4,3,2,1,4,2,8,7,3,6,5,9,6,8,4,3,2,1,9,5,7,7,2,1,6,5,9,3,4,8,3,9,5,4,8,7,2,6,1];
+	for (i = 0; i < sol.length;i++) {
+		solution.push(sol[i]);
+	}
 }
+function checkSolution(current, solution) {
+	alert("Checking Solution"+current[0]);
 
+}
 function catClick(catPos) {
 	var img = document.getElementById("cat"+catPos);
 	var str = img.src.substring(img.src.lastIndexOf("/")+1,img.src.length);
@@ -160,6 +174,35 @@ function catClick(catPos) {
 			case "nine.jpg":
 				img.src="zero.jpg";
 				break;
+		}
+		switch(catPos) {
+		case 100:
+			current[0] = (current[0] + 1) % 10;
+			break;
+		case 101:
+			current[1] = (current[1] + 1) % 10;
+			break;
+		case 102:
+			current[2] = (current[2] + 1) % 10;
+			break;
+		case 103:
+			current[3] = (current[3] + 1) % 10;
+			break;
+		case 104:
+			current[4] = (current[4] + 1) % 10;
+			break;
+		case 105:
+			current[5] = (current[5] + 1) % 10;
+			break;
+		case 106:
+			current[6] = (current[6] + 1) % 10;
+			break;
+		case 107:
+			current[7] = (current[7] + 1) % 10;
+			break;
+		case 108:
+			current[8] = (current[8] + 1) % 10;
+			break;
 		}
 	}
 }
