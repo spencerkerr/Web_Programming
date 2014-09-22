@@ -24,10 +24,18 @@ window.onload=function() {
 			catTable = catTable + "</td></tr>";
 		}
 		catTable = catTable + "</table>";
-		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"initialize(fixedCats)\" value=\"Reset Puzzle\"/>";
-		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"checkSolution(current, solution)\" value=\"Check Solution\"/>";
+		
+		catTable = catTable + "<input type=\"button\" id=\"resetButton\" onclick=\"initialize(fixedCats)\" value=\"Reset Puzzle\"/>";
+		catTable = catTable + "<input type=\"button\" id=\"checkButton\" onclick=\"checkSolution(current, solution)\" value=\"Check Solution\"/>";
+		catTable = catTable + "<input type=\"button\" id=\"instButton\" onclick=\"instructions()\" value=\"Instructions\"/>";
+	
 		document.getElementById("cats").innerHTML = catTable;
 		initialize(fixedCats, current);
+		instructions();
+}
+
+function instructions() {
+	alert("Sudoku With Cats!!!!\n Put a number of cats (1-9) in each cell so that \n *Each row has one of each 1-9 cats \n *Each column has one of each 1-9 cats \n *Each 3x3 box has one of each 1-9 cats \n Click to increase the number of cats in a cell if it is editable.");
 }
 
 function initialize(fixedCats, current, solution) {
