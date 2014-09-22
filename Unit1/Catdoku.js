@@ -121,17 +121,20 @@ function initialize(fixedCats, current, solution) {
 	document.getElementById("cat326").src="two.jpg";
 	document.getElementById("cat327").src="six.jpg";
 	document.getElementById("cat328").src="zero.jpg";	//zero
+	alert("here3");
 	var cats = [101,102,103,104,106,108,110,112,120,121,124,125,126,128,210,212,214,216,218,300,302,303,304,307,308,316,318,320,322,324,325,326,327];
 	for (i = 0; i < cats.length;i++) {
 		fixedCats.push(cats[i]);
 	}
+	alert("here2");
 	var curr = [0,4,5,8,1,0,7,0,9,8,0,3,0,0,0,0,0,0,7,1,0,0,2,4,5,0,8,0,0,0,0,0,0,0,0,0,9,0,7,0,6,0,4,0,2,0,0,0,0,0,0,0,0,0,6,0,4,3,2,0,0,5,7,0,0,0,0,0,0,3,0,8,3,0,5,0,8,7,2,6,0];
 	for (i = 0; i < curr.length;i++) {
 		current.push(curr[i]);
 	}
-	
+	alert("here1");
 	var sol = [2,4,5,8,1,3,7,6,9,8,9,3,5,7,6,2,1,4,7,1,6,9,2,4,5,3,8,5,3,6,4,9,2,1,7,8,9,8,7,1,6,5,4,3,2,1,4,2,8,7,3,6,5,9,6,8,4,3,2,1,9,5,7,7,2,1,6,5,9,3,4,8,3,9,5,4,8,7,2,6,1];
 	for (i = 0; i < sol.length;i++) {
+		alert("here");
 		solution.push(sol[i]);
 	}
 }
@@ -139,8 +142,9 @@ function checkSolution(current, solution) {
 	alert("Checking Solution"+current[0]);
 	var correct = true;
 	for(i=0; i<current.length; i++) {
-		if (current[i] != solution[i]) {
+		if (current[i].value != solution[i]) {
 			correct = false;
+			alert("Position "+i+" is incorrect");
 		}
 	}
 	if (correct) {
@@ -185,7 +189,9 @@ function catClick(catPos) {
 				img.src="zero.jpg";
 				break;
 		}
+		
 		switch(catPos) {
+		
 			//upper left
 			case 100:
 				current[0] = (current[0] + 1) % 10;
@@ -374,7 +380,7 @@ function catClick(catPos) {
 				current[57] = (current[57] + 1) % 10;
 				break;
 			case 304:
-				current{58] = (current[58] + 1) % 10;
+				current[58] = (current[58] + 1) % 10;
 				break;
 			case 305:
 				current[59] = (current[59] + 1) % 10;
@@ -446,6 +452,7 @@ function catClick(catPos) {
 			case 228:
 				current[80] = (current[80] + 1) % 10;
 				break;
+			
 		}
 	}
 }
