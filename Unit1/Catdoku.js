@@ -22,6 +22,8 @@ window.onload=function() {
 			catTable = catTable + "</td></tr>";
 		}
 		catTable = catTable + "</table>";
+		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"initialize(fixedCats)\" value=\"Reset Puzzle\"/>";
+		catTable = catTable + "<input type=\"button\" id=\"myButton\" onclick=\"initialize(fixedCats)\" value=\"Check Solution\"/>";
 		document.getElementById("cats").innerHTML = catTable;
 		initialize(fixedCats);
 }
