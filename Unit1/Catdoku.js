@@ -1,6 +1,6 @@
 var fixedCats =[];
 var current =[];
-var solution =[];
+var solution =[2,4,5,8,1,3,7,6,9,8,9,3,5,7,6,2,1,4,7,1,6,9,2,4,5,3,8,5,3,6,4,9,2,1,7,8,9,8,7,1,6,5,4,3,2,1,4,2,8,7,3,6,5,9,6,8,4,3,2,1,9,5,7,7,2,1,6,5,9,3,4,8,3,9,5,4,8,7,2,6,1];
 window.onload=function() {
 	var catTable;
 		catTable = "<table>"
@@ -129,21 +129,11 @@ function initialize(fixedCats, current, solution) {
 	for (i = 0; i < curr.length;i++) {
 		current.push(curr[i]);
 	}
-	
-	var sol = [2,4,5,8,1,3,7,6,9,8,9,3,5,7,6,2,1,4,7,1,6,9,2,4,5,3,8,5,3,6,4,9,2,1,7,8,9,8,7,1,6,5,4,3,2,1,4,2,8,7,3,6,5,9,6,8,4,3,2,1,9,5,7,7,2,1,6,5,9,3,4,8,3,9,5,4,8,7,2,6,1];
-	for (i = 0; i < sol.length;i++) {
-		alert(sol[i]);
-		solution.push(sol[i]);
-	}
-	alert("HERE");
 }
 function checkSolution(current, solution) {
-	alert("Checking Solution"+current[0]);
 	var correct = false;
 	var currentString = current.toString();
 	var solutionString = solution.toString();
-	alert(currentString);
-	alert(solutionString);
 	if (currentString == solutionString) {
 		correct = true;
 	}
@@ -423,31 +413,31 @@ function catClick(catPos) {
 				break;
 				
 			//lower right
-			case 220:
+			case 320:
 				current[72] = (current[72] + 1) % 10;
 				break;
-			case 221:
+			case 321:
 				current[73] = (current[73] + 1) % 10;
 				break;
-			case 222:
+			case 322:
 				current[74] = (current[74] + 1) % 10;
 				break;
-			case 223:
+			case 323:
 				current[75] = (current[75] + 1) % 10;
 				break;
-			case 224:
+			case 324:
 				current[76] = (current[76] + 1) % 10;
 				break;
-			case 225:
+			case 325:
 				current[77] = (current[77] + 1) % 10;
 				break;
-			case 226:
+			case 326:
 				current[78] = (current[78] + 1) % 10;
 				break;
-			case 227:
+			case 327:
 				current[79] = (current[79] + 1) % 10;
 				break;
-			case 228:
+			case 328:
 				current[80] = (current[80] + 1) % 10;
 				break;
 		}
