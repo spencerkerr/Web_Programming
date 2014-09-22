@@ -2,6 +2,11 @@ body {
 	background-color:black;
 }
 
+#cats {
+	outline: 3px solid green;
+	outline-offset: 15px;
+}
+
 #cats  table{
 	background-color:yellow;
 	border: 3px solid orange;
@@ -15,4 +20,13 @@ h1 {
 }
 img {
 	height:30%;
+}
+
+canvas {
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 25%;
 }

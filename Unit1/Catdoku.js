@@ -129,6 +129,17 @@ function initialize(fixedCats, current, solution) {
 	document.getElementById("cat326").src="two.jpg";
 	document.getElementById("cat327").src="six.jpg";
 	document.getElementById("cat328").src="zero.jpg";	//zero
+	
+	var c = document.getElementById("header");
+	var ctx = c.getContext("2d");
+	ctx.font="320% Verdana";
+	var gradient=ctx.createLinearGradient(0,0,c.width,0);
+	gradient.addColorStop("0","magenta");
+	gradient.addColorStop("0.5","blue");
+	gradient.addColorStop("1.0","red");
+	ctx.fillStyle=gradient;
+	ctx.fillText("Catdoku",50,75);
+	
 	var cats = [101,102,103,104,106,108,110,112,120,121,124,125,126,128,210,212,214,216,218,300,302,303,304,307,308,316,318,320,322,324,325,326,327];
 	for (i = 0; i < cats.length;i++) {
 		fixedCats.push(cats[i]);
