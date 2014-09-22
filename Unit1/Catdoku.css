@@ -3,6 +3,10 @@ body {
 }
 
 
+#cats {
+	outline: 3px solid green;
+	outline-offset: 15px;
+}
 
 #cats  table{
 	background-color:yellow;
@@ -18,4 +22,28 @@ h1 {
 }
 img {
 	height:30%;
+}
+
+canvas {
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 25%;
+	
+	position: relative;
+	-webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes myfirst {
+    0%   {left:-200px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:-200px; top:0px;}
 }
