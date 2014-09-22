@@ -137,7 +137,17 @@ function initialize(fixedCats, current, solution) {
 }
 function checkSolution(current, solution) {
 	alert("Checking Solution"+current[0]);
-
+	var correct = true;
+	for(i=0; i<current.length; i++) {
+		if (current[i] != solution[i]) {
+			correct = false;
+		}
+	}
+	if (correct) {
+		alert("You got it right!");
+	} else {
+		alert("You have something wrong");
+	}
 }
 function catClick(catPos) {
 	var img = document.getElementById("cat"+catPos);
