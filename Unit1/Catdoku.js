@@ -135,9 +135,13 @@ function initialize(fixedCats, current, solution) {
 	ctx.font="320% Verdana";
 	var gradient=ctx.createLinearGradient(0,0,c.width,0);
 	gradient.addColorStop("0","magenta");
-	gradient.addColorStop("0.5","blue");
+	gradient.addColorStop("0.5","cyan");
 	gradient.addColorStop("1.0","red");
 	ctx.fillStyle=gradient;
+	ctx.shadowOffsetX = 5;
+	ctx.shadowOffsetY = 5;
+	ctx.shadowBlur = 7;
+	ctx.shadowColor = "white";
 	ctx.fillText("Catdoku",50,75);
 	
 	var cats = [101,102,103,104,106,108,110,112,120,121,124,125,126,128,210,212,214,216,218,300,302,303,304,307,308,316,318,320,322,324,325,326,327];
